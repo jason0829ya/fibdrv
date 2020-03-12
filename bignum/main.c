@@ -4,8 +4,15 @@
 
 int main()
 {
-    Big_Num a = new_bignum("1111111111111111111");
-    print_num(&a);
-
+	char dec[10] = "1024";
+	char bin[100] = "0";
+	dec2bin(bin, dec);
+	printf("done\n%s\n", bin);
+	
+	
+	//char a[10] = "012345678";
+	//a [2] -= '0';
+	//
+	//printf("%d\n", a[2] & 1);
     return 0;
 }
